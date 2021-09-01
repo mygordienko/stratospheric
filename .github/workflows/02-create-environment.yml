@@ -37,4 +37,5 @@ jobs:
         run: |
           cd cdk
           echo "----> $AWS_ACCOUNT"
+          npm run test:quotes:curly
           npm run network:deploy -- -c environmentName=${{ github.event.inputs.environmentName }}
